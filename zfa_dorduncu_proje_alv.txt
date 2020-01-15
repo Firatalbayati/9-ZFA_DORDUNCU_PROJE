@@ -1,0 +1,230 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_DORDUNCU_PROJE_ALV
+*&---------------------------------------------------------------------*
+
+
+FORM  manuel_fieldcatalog.
+ls_layout-zebra = abap_true.
+ls_layout-colwidth_optimize = abap_true.
+  wa_fieldcat-col_pos = '1'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'VBELN'.
+  wa_fieldcat-seltext_m = 'VBELN'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+  wa_fieldcat-col_pos = '2'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRP'.
+  wa_fieldcat-fieldname = 'POSNR'.
+  wa_fieldcat-seltext_m = 'POSNR'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '3'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'FKART'.
+  wa_fieldcat-seltext_m = 'FKART'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '4'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'FKTYP'.
+  wa_fieldcat-seltext_m = 'FKTYP'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '5'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'VBTYP'.
+  wa_fieldcat-seltext_m = 'VBTYP'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '6'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'VKORG'.
+  wa_fieldcat-seltext_m = 'VKORG'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '7'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'VTWEG'.
+  wa_fieldcat-seltext_m = 'VTWEG'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '8'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRK'.
+  wa_fieldcat-fieldname = 'FKDAT'.
+  wa_fieldcat-seltext_m = 'FKDAT'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '9'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRP'.
+  wa_fieldcat-fieldname = 'VRKME'.
+  wa_fieldcat-seltext_m = 'VRKME'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '10'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBRP'.
+  wa_fieldcat-fieldname = 'MATNR'.
+  wa_fieldcat-seltext_m = 'MATNR'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '11'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'WERKS'.
+  wa_fieldcat-seltext_m = 'WERKS'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '12'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'FKIMG'.
+  wa_fieldcat-seltext_m = 'FKIMG'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '13'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'NTGEW'.
+  wa_fieldcat-seltext_m = 'NTGEW'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '14'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'BRGEW'.
+  wa_fieldcat-seltext_m = 'BRGEW'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '15'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'GEWEI'.
+  wa_fieldcat-seltext_m = 'GEWEI'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '16'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAP'.
+  wa_fieldcat-fieldname = 'BRTWR'.
+  wa_fieldcat-seltext_m = 'BRTWR'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '17'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAK'.
+  wa_fieldcat-fieldname = 'WAERK'.
+  wa_fieldcat-seltext_m = 'WAERK'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  wa_fieldcat-col_pos = '18'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'VBAK'.
+  wa_fieldcat-fieldname = 'KUNAG'.
+  wa_fieldcat-seltext_m = 'KUNAG'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+  wa_fieldcat-col_pos = '19'.
+  wa_fieldcat-row_pos = '1'.
+  wa_fieldcat-tabname  = 'KNA1'.
+  wa_fieldcat-fieldname = 'NAME1'.
+  wa_fieldcat-seltext_m = 'Müsteri Adi'.
+  APPEND wa_fieldcat TO it_fieldcat.
+  CLEAR wa_fieldcat.
+
+
+  CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+      i_callback_program = sy-cprog
+      is_layout          = ls_layout
+      it_fieldcat        = it_fieldcat
+* IMPORTING
+*     E_EXIT_CAUSED_BY_CALLER           =
+*     ES_EXIT_CAUSED_BY_USER            =
+    TABLES
+      t_outtab           = it_inner
+* EXCEPTIONS
+*     PROGRAM_ERROR      = 1
+*     OTHERS             = 2
+    .
+  IF sy-subrc <> 0.
+* Implement suitable error handling here
+  ENDIF.
+
+ENDFORM.
+
+
+FORM display.
+
+  ls_layout-zebra = abap_true.
+  ls_layout-colwidth_optimize = abap_true.
+
+  IF it_inner IS NOT INITIAL. "eger tablo boş değilise ekranda göster
+
+    CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+      EXPORTING
+        i_callback_program = sy-cprog
+        is_layout          = ls_layout
+*       it_fieldcat        = it_fieldcat
+        i_structure_name   = 'ZFA_08_ALV_ODEV2'
+* IMPORTING
+*       E_EXIT_CAUSED_BY_CALLER           =
+*       ES_EXIT_CAUSED_BY_USER            =
+      TABLES
+        t_outtab           = it_inner
+* EXCEPTIONS
+*       PROGRAM_ERROR      = 1
+*       OTHERS             = 2
+      .
+    IF sy-subrc <> 0.
+* Implement suitable error handling here
+    ENDIF.
+
+  ELSE.  "eğer tablo boş ise error mesajını yaz
+
+    MESSAGE i000(zfa_message_class) DISPLAY LIKE 'E'.
+
+  ENDIF.
+ENDFORM.

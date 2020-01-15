@@ -1,0 +1,28 @@
+REPORT zfa_dorduncu_proje.
+
+INCLUDE zfa_dorduncu_proje_top.
+INCLUDE zfa_dorduncu_proje_scrn.
+INCLUDE zfa_dorduncu_proje_f01.
+INCLUDE zfa_dorduncu_proje_alv.
+
+
+AT SELECTION-SCREEN.
+
+
+AT SELECTION-SCREEN OUTPUT.
+*  PERFORM modify_screen.
+
+*AT SELECTION-SCREEN ON VALUE-REQUEST FOR s_ad.
+*   PERFORM CHANGE_NAME.
+
+START-OF-SELECTION.
+  PERFORM get_data.
+
+
+
+END-OF-SELECTION.
+  IF p1 = abap_true .
+    PERFORM display.
+  ELSEIF p2 = abap_true.
+    PERFORM  manuel_fieldcatalog.
+  ENDIF.

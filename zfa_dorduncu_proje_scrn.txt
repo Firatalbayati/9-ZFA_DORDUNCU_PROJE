@@ -1,0 +1,23 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_DORDUNCU_PROJE_SCRN
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK blok WITH FRAME TITLE text-001.
+
+SELECTION-SCREEN SKIP.
+PARAMETERS : p1 RADIOBUTTON GROUP rb1.
+SELECTION-SCREEN SKIP.
+PARAMETERS : p2 RADIOBUTTON GROUP rb1.
+SELECTION-SCREEN SKIP.
+
+SELECT-OPTIONS : s_vbeln FOR g_vbeln NO-EXTENSION NO INTERVALS,
+                 s_fkart FOR g_fkart NO-EXTENSION NO INTERVALS,
+                 s_fktyp FOR g_fktyp NO-EXTENSION,
+                 s_vbtyp FOR g_vbtyp, "NO-EXTENSION,
+                 s_vkorg FOR g_vkorg NO-EXTENSION,
+                 s_vtweg FOR g_vtweg NO-EXTENSION,
+                 s_fkdat FOR g_fkdat NO-EXTENSION,
+                 s_vrkme FOR g_vrkme NO-EXTENSION,
+                 s_matnr FOR g_matnr NO-EXTENSION,
+                 s_werks FOR g_werks NO-EXTENSION.
+
+SELECTION-SCREEN END OF BLOCK blok.

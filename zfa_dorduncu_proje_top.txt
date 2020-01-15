@@ -1,0 +1,26 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_DORDUNCU_PROJE_TOP
+*&---------------------------------------------------------------------*
+TYPE-POOLS slis.
+
+TABLES : vbrk,
+         vbrp,
+         kna1.
+
+DATA: it_inner TYPE TABLE OF zfa_08_alv_odev2,   "ZFA_08_ALV_ODEV2 stracture tablo oncede gerkli alnları ekledik
+      ls_layout TYPE slis_layout_alv.
+
+DATA: it_fieldcat TYPE slis_t_fieldcat_alv,
+       wa_fieldcat TYPE slis_fieldcat_alv.
+
+DATA :   g_vbeln  TYPE  vbrk-vbeln,
+         g_fkart  TYPE  vbrk-fkart,
+         g_fktyp  TYPE  vbrk-fktyp,
+         g_vbtyp  TYPE  vbrk-vbtyp,
+         g_vkorg  TYPE  vbrk-vkorg,
+         g_vtweg  TYPE  vbrk-vtweg,
+         g_fkdat  TYPE  vbrk-fkdat,
+
+         g_vrkme  TYPE  vbrp-vrkme,
+         g_matnr  TYPE  vbrp-matnr,
+         g_werks  TYPE  vbrp-werks.

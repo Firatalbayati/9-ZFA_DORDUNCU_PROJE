@@ -1,0 +1,34 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_DORDUNCU_PROJE_F01
+*&---------------------------------------------------------------------*
+
+FORM get_data.                        " VK VBRK  KISALTILMIŞI   VP VBRP KISALTILMIŞI
+  SELECT    vk~vbeln
+            vk~fkart
+            vk~fktyp
+            vk~vbtyp
+            vk~vkorg
+            vk~vtweg
+            vk~fkdat
+            vp~vrkme
+            vp~matnr
+            vp~werks
+
+
+                       FROM vbrk AS vk
+           INNER JOIN vbrp AS vp ON
+           vk~vbeln = vp~vbeln
+           INTO CORRESPONDING FIELDS OF TABLE it_inner
+            WHERE vk~vbeln IN s_vbeln
+              AND vk~fkart IN s_fkart
+              AND vk~fktyp IN s_fktyp
+              AND vk~vbtyp IN s_vbtyp
+              AND vk~vkorg IN s_vkorg
+              AND vk~vtweg IN s_vtweg
+              AND vk~fkdat IN s_fkdat
+              AND vp~vrkme IN s_vrkme
+              AND vp~matnr IN s_matnr
+              AND vp~werks IN s_werks.
+
+
+ENDFORM.
